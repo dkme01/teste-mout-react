@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.js": "/teste-mout-react/static/js/main.859c7de9.chunk.js",
-    "main.js.map": "/teste-mout-react/static/js/main.859c7de9.chunk.js.map",
-    "runtime-main.js": "/teste-mout-react/static/js/runtime-main.caa7516d.js",
-    "runtime-main.js.map": "/teste-mout-react/static/js/runtime-main.caa7516d.js.map",
-    "static/js/2.197cc4a7.chunk.js": "/teste-mout-react/static/js/2.197cc4a7.chunk.js",
-    "static/js/2.197cc4a7.chunk.js.map": "/teste-mout-react/static/js/2.197cc4a7.chunk.js.map",
-    "index.html": "/teste-mout-react/index.html",
-    "static/js/2.197cc4a7.chunk.js.LICENSE.txt": "/teste-mout-react/static/js/2.197cc4a7.chunk.js.LICENSE.txt"
+    "main.js": "/countries/static/js/main.859c7de9.chunk.js",
+    "main.js.map": "/countries/static/js/main.859c7de9.chunk.js.map",
+    "runtime-main.js": "/countries/static/js/runtime-main.bf564747.js",
+    "runtime-main.js.map": "/countries/static/js/runtime-main.bf564747.js.map",
+    "static/js/2.197cc4a7.chunk.js": "/countries/static/js/2.197cc4a7.chunk.js",
+    "static/js/2.197cc4a7.chunk.js.map": "/countries/static/js/2.197cc4a7.chunk.js.map",
+    "index.html": "/countries/index.html",
+    "static/js/2.197cc4a7.chunk.js.LICENSE.txt": "/countries/static/js/2.197cc4a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.caa7516d.js",
+    "static/js/runtime-main.bf564747.js",
     "static/js/2.197cc4a7.chunk.js",
     "static/js/main.859c7de9.chunk.js"
   ]
