@@ -17,9 +17,8 @@ export function Countries() {
     Array<CountryInfo>
   >([]);
   const [currentPage, setCurrentPage] = useState<number>(1);
-  const [countrySelected, setCountrySelected] = useState<CountryInfo | null>(
-    null
-  );
+  const [countrySelected, setCountrySelected] =
+    useState<CountryInfo | null>(null);
   const [loading, setLoading] = useState<boolean>(true);
 
   useEffect(() => {

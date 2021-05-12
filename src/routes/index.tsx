@@ -10,9 +10,13 @@ export function Routes() {
   return (
     <Router>
       <Switch>
-        <Route exact path="/" render={() => <Redirect to="/countries" />} />
-        <Route exact path="/countries" render={() => <Countries />} />
-        <Route path="*" render={() => <Redirect to="/countries" />} />
+        <Route
+          exact
+          path="/"
+          render={() => <Redirect to="/test-mout-react" />}
+        />
+        <Route exact path="/test-mout-react" render={() => <Countries />} />
+        <Route path="*" render={() => <Redirect to="/test-mout-react" />} />
       </Switch>
     </Router>
   );
