@@ -1,46 +1,45 @@
-# Getting Started with Create React App
+# Instruções para execução
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+*Clone o repositório em seu local de preferência, em seguida execute yarn ou npm para instalar as dependências.
+<br/>
+*O arquivo .env.example deve ser usado como referência para criação de seu próprio .env com os dados necessários
+<br/>
+*Execute com yarn start ou npm start.
 
-In the project directory, you can run:
+*Foi utilizada a API <a href=“https://restcountries.eu/“>REST COUNTRIES</a>
 
-### `yarn start`
+# O app possui as seguintes funcionalidades
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+*Visualizar todos os países da API na página inicial. Com paginação já inclusa.
+<br/>
+*Pesquisar por países específicos na barra superior.
+<br/>
+*Filtrar por região.
+<br/>
+*Visualizar mais detalhes de um país selecionado.
+<br/>
+*Redirecionar para os países que fazem fronteira com o país selecionado inicialmente.
+<br/>
+*Alternar entre Dark e Light Mode.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+# Tecnologias Utilizadas
 
-### `yarn test`
+*Create React App
+<br/>
+*Design de interface utilizado é o Material UI
+<br/>
+*Acesso a API feito utilizando o Axios
+<br/>
+*Dark Mode e Light Mode no com Context e acessíveis por custom hooks
+<br/>
+*Estilização feita utilizando o hook de estilos do MUI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+# Demonstração
 
-### `yarn build`
+<a href="https://ibb.co/1rf3jXf"><img src="https://i.ibb.co/pfvg5Kv/Screenshot-18.png" target="_blank" border="0"></a>
+<a href="https://ibb.co/CPzPxx2"><img src="https://i.ibb.co/phxhCCy/Screenshot-19.png" target="_blank" border="0"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `yarn eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="center">
+   https://dkme01.github.io/teste-mout-react/
+</p>
