@@ -25,16 +25,17 @@ export function CustomSearchBar({
 }: CustomSearchBarProps) {
   const customClasses = useSearchBarStyles();
   const [filter, setFilter] = useState<string>("");
-  const [selectedOption, setSelectedOption] = useState<{
-    Name: string;
-    Region: string;
-  } | null>(null);
-  const [dataOptionsToSelection, setDataOptionsToSelecion] = useState(
-    dataOptions
-  );
+  const [selectedOption, setSelectedOption] =
+    useState<{
+      Name: string;
+      Region: string;
+    } | null>(null);
+  const [dataOptionsToSelection, setDataOptionsToSelecion] =
+    useState(dataOptions);
 
   function handleFilterChange(value: string) {
     setFilter(value);
+    handleSearch(value, selectedOption?.Name);
   }
 
   function handleSearchTextChange(
