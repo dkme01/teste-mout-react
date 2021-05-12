@@ -1,5 +1,5 @@
 import { Pagination } from "@material-ui/lab";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { usePaginationStyles } from "./styles";
 
 interface CustomPaginationProps {
@@ -15,8 +15,14 @@ export function CustomPagination({
   currentPage,
   onPageChange,
 }: CustomPaginationProps) {
-  const [pages] = useState<number>(Math.round(dataSize / pageLimit));
+  const [pages, setPages] = useState<number>(() =>
+    Math.round(dataSize / pageLimit)
+  );
   const customClasses = usePaginationStyles();
+
+  useEffect(() => {
+    setPages(() => Math.round(dataSize / pageLimit));
+  }, [dataSize]);
 
   return (
     <Pagination
