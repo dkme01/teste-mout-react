@@ -8,7 +8,9 @@ interface ColorSchemeContextData {
   customClasses: any;
 }
 
-const ColorSchemeContext = createContext<ColorSchemeContextData>({} as ColorSchemeContextData);
+const ColorSchemeContext = createContext<ColorSchemeContextData>(
+  {} as ColorSchemeContextData
+);
 
 function ColorSchemeProvider({ children }: any) {
   const [darkState, setDarkState] = useState(true);
@@ -48,7 +50,9 @@ function useColorSchemeContext(): ColorSchemeContextData {
   const context = useContext(ColorSchemeContext);
 
   if (!context) {
-    throw new Error("useColorSchemeContext must be used within an ColorSchemeProvider");
+    throw new Error(
+      "useColorSchemeContext must be used within an ColorSchemeProvider"
+    );
   }
   return context;
 }
@@ -63,4 +67,9 @@ function withColorSchemeContext(Component: any) {
   };
 }
 
-export { ColorSchemeContext, useColorSchemeContext, withColorSchemeContext, ColorSchemeProvider };
+export {
+  ColorSchemeContext,
+  useColorSchemeContext,
+  withColorSchemeContext,
+  ColorSchemeProvider,
+};
